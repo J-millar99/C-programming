@@ -37,6 +37,8 @@ int main(void)
     printf("arr2: ");
     for(i = 0; i<6; i++)
         printf("%d ", arr2[i]);
+    
+    printf("\n");
 
     return 0;
 
