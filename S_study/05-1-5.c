@@ -3,8 +3,8 @@
 int main(void)
 {
     char ch;
-    printf("ì•„ìŠ¤í‚¤ ì½”ë“œí‘œì˜ ë¬¸ìë¥¼ í•˜ë‚˜ ì…ë ¥: ");
-    scanf("%c", &ch);
+    printf("¾Æ½ºÅ° ÄÚµåÇ¥ÀÇ ¹®ÀÚ¸¦ ÇÏ³ª ÀÔ·Â: ");
+    scanf("%d", &ch);
     printf("%d \n", ch);
     return 0;
 }
