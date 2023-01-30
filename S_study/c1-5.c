@@ -1,27 +1,28 @@
 #include <stdio.h>
 
+int isPrime(int n)
+{
+    int cnt=0, i;
+    for(i=1; i<=n; i++)
+    {
+        if (n%i==0)
+            cnt+=1;
+    }
+    if (cnt==2)
+        return 1;
+    
+}
 int main(void)
 {   
-    int i, j, cnt=0, ea=0;
-
-    for(i=1; i<100; i++)
+    int exa=0,i=1;
+    while(exa!=10)
     {
-        for(j=1; j<=i; j++)
-        {
-            if (i%j==0)
-            {
-                cnt++;
-            }
-        }
-        if (cnt==2)
+        if(isPrime(i)==1)
         {
             printf("%d ", i);
-            ea+=1;
+            exa ++;
         }
-        if (ea==10)
-            break;
-        cnt=0;
-
+        i++;
     }
     return 0;
 }
