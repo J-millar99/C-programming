@@ -2,8 +2,8 @@
 
 int numPow(int num)
 {
-    if (num==1)
-        return 2;
+    if (num==0)
+        return 1;
     else
         return 2 * numPow(num-1);
 }

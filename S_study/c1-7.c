@@ -2,18 +2,18 @@
 
 int main(void)
 {   
-    int i=1, cnt=0, n;
-    printf("ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ ï¿½Ô·ï¿½: ");
+    int n, k;
+    int inc=1;
+    printf("»ó¼ö nÀ» ÀÔ·Â: ");
     scanf("%d", &n);
-    while(1)
-    {    
-        i *=2;
-        cnt +=1;
-        if (i>=n)
-        {
-            printf("%d \n", cnt);
-            break;
-        }
+
+    if(n==0)
+    {
+        printf("¸¸Á·ÇÏ´Â k°ªÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. ");
+        return 0;
     }
+    for(k=0; inc*2<=n; k++)
+        inc = inc * 2;
+    printf("ÃÖ´ë°ªk = %d \n", k);
     return 0;
 }
