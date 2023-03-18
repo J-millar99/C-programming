@@ -18,6 +18,6 @@ int main(void)
 {
     FILE * fp = fopen("mystory.txt", "rt");
     getFileByte(fp);
-    printf("íŒŒì¼ì˜ í¬ê¸°: %ld", getFileByte(fp));
+    printf("ÆÄÀÏÀÇ Å©±â: %ld", getFileByte(fp));
     return 0;
 }
